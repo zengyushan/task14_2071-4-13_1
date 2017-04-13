@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="header_style.css">
+    <title>header</title>
+    <script>
+        function cMenu() {
+            var obj = document.getElementById("vm").style.display;
+            if (obj == "none") {
+                document.getElementById("vm").style.display = "block";
+                document.getElementById("nav-id").style.borderBottom="1px solid #ffffff";
+            }
+            else {
+                document.getElementById("vm").style.display = "none";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="contact">
+        <span class="phone">客服热线：010-594-78634</span>
+        <div class="cont-icon">
+            <img src="../images/home_page_weixin.png">
+            <img src="../images/home_page_qq.png">
+            <img src="../images/home_page_weibo.png">
+        </div>
+    </div>
+    <div class="nav" id="nav-id">
+        <div class="logo">
+            <div class="logo-name">技能树</div>
+            <div class="logo-site">www.jnshu.com</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="open">
+                    <button type="button" onclick="cMenu()">
+                        <div class="btn-icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </button>
+                </li>
+                <li><a href="#" class="nav-a">首页</a></li>
+                <li><a href="#" class="nav-a">职业</a></li>
+                <li><a href="#" class="nav-a">推荐</a></li>
+                <li><a href="#" class="nav-a">关于</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ver-menu" id="vm">
+        <ul>
+            <li><a href="#" class="ver-a">首页</a></li>
+            <li><a href="#" class="ver-a">职业</a></li>
+            <li><a href="#" class="ver-a">推荐</a></li>
+            <li><a href="#" class="ver-a">关于</a></li>
+        </ul>
+    </div>
+</header>
+</body>
+</html>
